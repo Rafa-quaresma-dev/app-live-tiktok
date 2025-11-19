@@ -204,7 +204,7 @@ export const ctaButtonConfig = {
 
 export const chatConfig = {
   // 📱 How many comments to show on screen at once
-  visibleComments: 5,
+  visibleComments: 8,
 
   // ⏱️ Interval between comments (in seconds)
   // Set to 1 for comments to appear every 1 second

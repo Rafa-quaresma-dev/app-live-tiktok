@@ -138,7 +138,7 @@ export const LiveChat = () => {
     <>
       {/* TikTok-style floating comments overlay - Mobile Optimized */}
       <div className="absolute left-0 right-0 bottom-32 z-10 px-3 pointer-events-none">
-        <div className="flex flex-col gap-1.5 items-start max-w-[75%]">
+        <div className="flex flex-col gap-1 items-start max-w-[75%]">
           {messages.slice(-chatConfig.visibleComments).map((msg) => (
             <div
               key={msg.id}
