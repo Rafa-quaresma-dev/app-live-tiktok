@@ -243,8 +243,9 @@ export const VideoPlayer = ({ videoId = videoConfig.videoId }: VideoPlayerProps)
   }, []);
 
   // Auto-generate reactions periodically (TikTok effect)
+  // Only includes emojis that users can actually send via buttons
   useEffect(() => {
-    const reactions = ['❤️', '🌹', '🎁', '😂', '😍', '🔥', '👏', '🎉'];
+    const reactions = ['❤️', '😊', '🌹', '🎁'];
 
     const interval = setInterval(() => {
       const random = Math.random();
