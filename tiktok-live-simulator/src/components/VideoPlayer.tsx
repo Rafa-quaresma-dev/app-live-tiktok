@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { Heart, X, MousePointerClick, Gift, Tag, TrendingUp, Sparkles, MoreVertical, Flame, Star } from "lucide-react";
-import { videoConfig, channelConfig, ctaButtonConfig, liveBannersConfig } from "@/config/livestream-config";
+import { videoConfig, channelConfig, ctaButtonConfig, liveBannersConfig, textConfig } from "@/config/livestream-config";
 import profileImg from "@/assets/images/profile.jpg";
 import viewer1Img from "@/assets/images/viewer1.svg";
 import viewer2Img from "@/assets/images/viewer2.svg";
@@ -591,8 +591,8 @@ export const VideoPlayer = ({ videoId = videoConfig.videoId }: VideoPlayerProps)
 
             {/* Follow Button */}
             <button className="bg-[#FE2C55] text-white font-bold text-xs px-4 py-1.5 rounded-full flex items-center gap-1 flex-shrink-0 active:scale-95 transition-transform">
-              <span className="text-base leading-none">+</span>
-              <span>Seguir</span>
+              <span className="text-base leading-none">{textConfig.followButtonSymbol}</span>
+              <span>{textConfig.followButtonText}</span>
             </button>
           </div>
 
